@@ -1,0 +1,306 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  animation:fond 70s infinite;
+}
+.btn:focus, #drop:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.classeur {
+  margin-top: 15px;
+  width: 55%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #546a2a;
+  color: #d6dace;
+}
+.tipeOption {
+  color: #d6dace;
+}
+
+@keyframes fond{
+  /* Il faut precharger l'image suivante pour eviter les flash blancs */
+  0% {
+      background: url("./Images/te4.jpg") fixed center;
+      background-size: cover;
+      height: 100%;
+  }
+  10% {
+      background: url("./Images/te4.jpg") fixed center, url("./Images/te3.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  18% {
+      background: url("./Images/te3.jpg") fixed center, url("./Images/te2.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  26% {
+      background: url("./Images/te2.jpg") fixed center, url("./Images/te1.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  34% {
+      background: url("./Images/te1.jpg") fixed center, url("./Images/te5.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  42% {
+      background: url("./Images/te5.jpg") fixed center, url("./Images/te6.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  50% {
+      background: url("./Images/te6.jpg") fixed center, url("./Images/te7.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  58% {
+      background: url("./Images/te7.jpg") fixed center, url("./Images/te8.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  66% {
+      background: url("./Images/te8.jpg") fixed center, url("./Images/te9.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  74% {
+      background: url("./Images/te9.jpg") fixed center, url("./Images/te10.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  82% {
+      background: url("./Images/te10.jpg") fixed center, url("./Images/te11.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+  90% {
+      background: url("./Images/te11.jpg") fixed center;
+      background-size: cover;
+      height: 100%;
+  }
+  100% {
+      background: url("./Images/te4.jpg") fixed center, url("./Images/te3.jpg");
+      background-size: cover;
+      height: 100%;
+  }
+}
+#header {
+  background-color: #546a2a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.titre {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #d6dace;
+}
+.img_header {
+  color: #d6dace;
+  font-size: 30px;
+  margin-top: 5px;
+}
+#drop {
+  background-color: #546a2a;
+  border: none;
+}
+#drop:hover {
+  background-color: #7f9e46;
+}
+#DropMenu {
+  background-color: #546a2a;
+}
+.DropItem:hover {
+  background-color: transparent;
+}
+.DropButton {
+  background-color: #7f9e46;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.DropButton:hover {
+  background-color: #6e8149;
+}
+.icons {
+  color: #d6dace;
+  font-size: 30px;
+  margin-top: 5px;
+}
+.iconsSpec {
+  color: #d6dace;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.DropButton:hover > .icons {
+  transform: rotate(25deg);
+}
+#navbar {
+  color: greenyellow;
+  text-align: center;
+  background-color: #546a2a;
+  border-bottom: 2px solid #647a3a;
+}
+#navbar button {
+  color: #d6dace;
+  background-color: #546a2a;
+  border: none;
+}
+#navbar button:hover {
+  background-color: #647a3a;
+}
+#acces{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#principale{
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#idBouton {
+  font-size: 20px;
+}
+#idBouton:hover > .img_feuille_bouton{
+  font-size: 220px;
+}
+#idBouton:hover > .text_feuille_bouton{
+  font-size: 25px;
+}
+.img_feuille_bouton {
+  position: absolute;
+  font-size: 200px;
+  width: auto;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%, 0);
+  color: #546a2a;
+}
+.text_feuille_bouton {
+  position: absolute;
+  font-size: 20px;
+  width: auto;
+  left: 50%;
+  top: 250px;
+  transform: translate(-50%, 0);
+  color: #d6dace;
+}
+.carte {
+  margin: 30px;
+}
+.Vert {
+  background-color: #546a2a;
+  color: #d6dace;
+  border: none;
+}
+.Noir {
+  color: #d6dace;
+  background-color: #2b3737;
+  border: none;
+}
+.Blanc {
+  color: #24252a;
+  background-color: #edffca;
+  border: none;
+}
+.PuErh {
+  background-color: #a06726;
+  color: #d6dace;
+  border: none;
+}
+.Oolong {
+  background-color: #9fa060;
+  color: #24252a;
+  border: none;
+}
+.Vertt, .Noirt, .PuErht {
+  background: transparent;
+  border: none;
+  color: #d6dace;
+  resize: none;
+  outline: none;
+}
+.Blanct, .Oolongt {
+  background: transparent;
+  border: none;
+  color: #24252a;
+  resize: none;
+  outline: none;
+}
+.mod {
+  color: #24252a;
+}
+.nodat {
+  margin-top: 150px;
+  border: none;
+  animation:blinkingText 3s infinite;
+}
+@keyframes blinkingText{
+  from {
+      color: #d6dace;
+      background-color: red;
+  }
+  to {
+      color: transparent;
+      background-color: transparent;
+  }
+}
+.btns {
+  color: #d6dace;
+  background-color: #7f9e46;
+  border: 1px solid #647a3a;
+  border-radius: 7px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btns:hover {
+  color: #d6dace;
+  text-decoration: none;
+}
+.titreDet {
+  color: #d6dace;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #647a3a;
+  margin-top: 25px;
+  border-radius: 7px;
+  border: 1px solid;
+}
+.details {
+  color: #d6dace;
+  text-align: center;
+}
+.detailsDiv {
+  background-color: #647a3a;
+  margin-top: 25px;
+  border-radius: 7px;
+  border: 1px solid;
+}
+.detailsDivTable {
+  background-color: #647a3a;
+  margin-top: 25px;
+  border-radius: 7px;
+}
+.back {
+  color: #d6dace;
+}
+.backLink:hover {
+  text-decoration: none;
+}
