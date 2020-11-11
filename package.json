@@ -1,7 +1,7 @@
 {
-  "name": "react-node-express",
-  "version": "0.0.0",
-  "description": "expless rest + react client",
+  "name": "thepedia",
+  "version": "1.0.0",
+  "description": "Biblitheque pour thés",
   "main": "server.js",
   "author": "StephanJ98",
   "license": "MIT",
