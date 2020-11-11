@@ -7,28 +7,28 @@ import Header from '../Components/Header';
 import { Link } from 'react-router-dom';
 
 export default function Noir() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
         <Container fluid className='containerCenter'>
             <Header />
             <Row>
                 <Col md={{ span: 8, offset: 2 }} sm={12} className='titreDet'>
-                    <h2>Détails sur le thé noir</h2>
+                    <h2>{t('Détails sur le thé noir')}</h2>
                 </Col>
             </Row>
             <Row className='details'>
                 <Col md={{ span: 8, offset: 2 }} sm={12} className="detailsDiv">
-                    <p>Le thé noir est l'un des plus consommés, c'est principalement parce que le Royaume-Uni l'a diffusé à travers ses colonies lorsqu'il a commencé à s'intéresser au commerce de ce produit. De plus, contrairement au thé vert qui ne conserve sa saveur que depuis quelques années, le thé noir le conserve beaucoup plus longtemps, ce qui facilite son commerce sur la route du thé entre les pays asiatiques.</p>
+                    <p>{t('Le thé noir est lun des plus consommés')}</p>
                 </Col>
             </Row>
             <Row className='details'>
                 <Col md={{ span: 8, offset: 2 }} sm={12} className="detailsDiv">
-                    <p>Les thés noirs portent généralement le nom de la région où ils sont produits. Les noms les plus connus et prestigieux sont Lapsang Souchong, Keemun, Diang Hong, Ying de Hong pour la Chine; Assam, Ceylan, Darjeeling, Nigiri pour l'Inde et Sry Lanka. En outre, il existe d'autres régions productrices (Vietnam, Népal et Turquie) qui produisent également du thé intéressant.</p>
+                    <p>{t('Les thés noirs portent généralement le nom de la région')}</p>
                 </Col>
             </Row>
             <Row className='details'>
                 <Col md={{ span: 8, offset: 2 }} sm={12} className="detailsDiv">
-                    <p>En règle générale, les thés d'Inde et de Ceylan sont traités par de fortes quantités de pesticides, donc avant de consommer un thé de cette origine, il est conseillé de s'assurer qu'il s'agit d'un thé Bio et de producteurs renommés.</p>
+                    <p>{t('En règle générale, les thés dInde et de Ceylan')}</p>
                 </Col>
             </Row>
             <Row className='details'>
@@ -36,45 +36,45 @@ export default function Noir() {
                     <table className="col-12 detailsDivTable">
                         <thead>
                             <tr>
-                                <th scope="col">#Théière#</th>
-                                <th scope="col">Température</th>
-                                <th scope="col">Temps d'infusion</th>
-                                <th scope="col">Dose pour 10 cl</th>
+                                <th scope="col">{t('#Théière#')}</th>
+                                <th scope="col">{t('Température')}</th>
+                                <th scope="col">{t('Temps d\'infusion')}</th>
+                                <th scope="col">{t('Dose pour 10 cl')}</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">Chine</th>
+                                <th scope="row">{t('Chine')}</th>
                                 <td>90°C</td>
                                 <td>4 - 5 min</td>
                                 <td>6g</td>
                             </tr>
                             <tr>
-                                <th scope="row">Inde - Darjeeling (Printemps)</th>
+                                <th scope="row">{t('Inde - Darjeeling (Printemps)')}</th>
                                 <td>85°C</td>
                                 <td>3'30 - 3'45 min</td>
                                 <td>6 - 8g</td>
                             </tr>
                             <tr>
-                                <th scope="row">Inde – Darjeeling Grands Crus</th>
+                                <th scope="row">{t('Inde – Darjeeling Grands Crus')}</th>
                                 <td>85°C</td>
                                 <td>3'45 - 4 min</td>
                                 <td>6 - 8g</td>
                             </tr>
                             <tr>
-                                <th scope="row">Inde – Darjeeling Autres périodes</th>
+                                <th scope="row">{t('Inde – Darjeeling Autres périodes')}</th>
                                 <td>90°C</td>
                                 <td>4 - 5 min</td>
                                 <td>6 - 8g</td>
                             </tr>
                             <tr>
-                                <th scope="row">Inde – Assam</th>
+                                <th scope="row">{t('Inde – Assam')}</th>   {/* {t('')} */}
                                 <td>90°C</td>
                                 <td>3 - 4 min</td>
                                 <td>6g</td>
                             </tr>
                             <tr>
-                                <th scope="row">Sri Lanka et autres origines</th>
+                                <th scope="row">{t('Sri Lanka et autres origines')}</th>
                                 <td>90°C</td>
                                 <td>3 - 5 min</td>
                                 <td>6g</td>
@@ -85,7 +85,7 @@ export default function Noir() {
             </Row>
             <Row>
                 <Col md={{ span: 8, offset: 2 }} sm={12} className='titreDet'>
-                    <Link className='backLink' to='/'><h2 className='back'>Atras</h2></Link>
+                    <Link className='backLink' to='/'><h2 className='back'>{t('Retour')}</h2></Link>
                 </Col>
             </Row>
         </Container>

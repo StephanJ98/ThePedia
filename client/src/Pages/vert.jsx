@@ -7,7 +7,7 @@ import Header from '../Components/Header';
 import { Link } from 'react-router-dom';
 
 export default function Vert() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
         <Container fluid className='containerCenter'>
             <Header />
@@ -56,7 +56,7 @@ export default function Vert() {
             </Row>
             <Row>
                 <Col md={{ span: 8, offset: 2 }} sm={12} className='titreDet'>
-                    <Link className='backLink' to='/'><h2 className='back'>Atras</h2></Link>
+                    <Link className='backLink' to='/'><h2 className='back'>{t('Retour')}</h2></Link>
                 </Col>
             </Row>
         </Container>
