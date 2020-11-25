@@ -1,46 +1,45 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './Pages/home'
 import The from './Pages/the'
 import Vert from './Pages/vert'
 import Noir from './Pages/noir'
-import Blanc from './Pages/blanc';
-import Puerh from './Pages/puerh';
-import Wulong from './Pages/wulong';
-import Info from './Pages/info';
+import Blanc from './Pages/blanc'
+import Puerh from './Pages/puerh'
+import Wulong from './Pages/wulong'
+import Info from './Pages/info'
 
-export default function App() {
+export default function App () {
   return (
-    <div className="App">
+    <div className='App'>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <Home />
           </Route>
-          <Route path="/the">
+          <Route path='/the'>
             <The />
           </Route>
-          <Route path="/vert">
+          <Route path='/vert'>
             <Vert />
           </Route>
-          <Route path="/noir">
+          <Route path='/noir'>
             <Noir />
           </Route>
-          <Route path="/blanc">
+          <Route path='/blanc'>
             <Blanc />
           </Route>
-          <Route path="/puerh">
+          <Route path='/puerh'>
             <Puerh />
           </Route>
-          <Route path="/wulong">
+          <Route path='/wulong'>
             <Wulong />
           </Route>
-          <Route path="/info">
+          <Route path='/info'>
             <Info />
           </Route>
         </Switch>
       </Router>
     </div>
-  );
-
+  )
 }

@@ -1,3 +1,8 @@
+$backgroundP: #546a2a;
+$textP: #d6dace;
+$backgroundBtns: #7f9e46;
+$backgroundDBtn : #6e8149;
+
 html, body {
   margin: 0;
   height: 100%;
@@ -20,11 +25,11 @@ body {
   height: 30px;
   border: none;
   border-radius: 10px;
-  background-color: #546a2a;
-  color: #d6dace;
+  background-color: $backgroundP;
+  color: $textP;
 }
 .tipeOption {
-  color: #d6dace;
+  color: $textP;
 }
 
 @keyframes fond{
@@ -96,49 +101,49 @@ body {
   }
 }
 #header {
-  background-color: #546a2a;
+  background-color: $backgroundP;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 .titre {
   font-weight: bold;
   margin-left: 10px;
-  color: #d6dace;
+  color: $textP;
 }
 .img_header {
-  color: #d6dace;
+  color: $textP;
   font-size: 30px;
   margin-top: 5px;
 }
 #drop {
-  background-color: #546a2a;
+  background-color: $backgroundP;
   border: none;
 }
 #drop:hover {
-  background-color: #7f9e46;
+  background-color: $backgroundBtns;
 }
 #DropMenu {
-  background-color: #546a2a;
+  background-color: $backgroundP;
 }
 .DropItem:hover {
   background-color: transparent;
 }
 .DropButton {
-  background-color: #7f9e46;
+  background-color: $backgroundBtns;
   border: none;
   border-radius: 5px;
   text-align: center;
 }
 .DropButton:hover {
-  background-color: #6e8149;
+  background-color: $backgroundDBtn;
 }
 .icons {
-  color: #d6dace;
+  color: $textP;
   font-size: 30px;
   margin-top: 5px;
 }
 .iconsSpec {
-  color: #d6dace;
+  color: $textP;
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -149,12 +154,12 @@ body {
 #navbar {
   color: greenyellow;
   text-align: center;
-  background-color: #546a2a;
+  background-color: $backgroundP;
   border-bottom: 2px solid #647a3a;
 }
 #navbar button {
-  color: #d6dace;
-  background-color: #546a2a;
+  color: $textP;
+  background-color: $backgroundP;
   border: none;
 }
 #navbar button:hover {
@@ -188,7 +193,7 @@ body {
   left: 50%;
   top: 200px;
   transform: translate(-50%, 0);
-  color: #546a2a;
+  color: $backgroundP;
 }
 .text_feuille_bouton {
   position: absolute;
@@ -197,18 +202,18 @@ body {
   left: 50%;
   top: 250px;
   transform: translate(-50%, 0);
-  color: #d6dace;
+  color: $textP;
 }
 .carte {
   margin: 30px;
 }
 .Vert {
-  background-color: #546a2a;
-  color: #d6dace;
+  background-color: $backgroundP;
+  color: $textP;
   border: none;
 }
 .Noir {
-  color: #d6dace;
+  color: $textP;
   background-color: #2b3737;
   border: none;
 }
@@ -219,7 +224,7 @@ body {
 }
 .PuErh {
   background-color: #a06726;
-  color: #d6dace;
+  color: $textP;
   border: none;
 }
 .Oolong {
@@ -230,7 +235,7 @@ body {
 .Vertt, .Noirt, .PuErht {
   background: transparent;
   border: none;
-  color: #d6dace;
+  color: $textP;
   resize: none;
   outline: none;
 }
@@ -251,7 +256,7 @@ body {
 }
 @keyframes blinkingText{
   from {
-      color: #d6dace;
+      color: $textP;
       background-color: red;
   }
   to {
@@ -260,8 +265,8 @@ body {
   }
 }
 .btns {
-  color: #d6dace;
-  background-color: #7f9e46;
+  color: $textP;
+  background-color: $backgroundBtns;
   border: 1px solid #647a3a;
   border-radius: 7px;
   height: 30px;
@@ -270,11 +275,11 @@ body {
   justify-content: center;
 }
 .btns:hover {
-  color: #d6dace;
+  color: $textP;
   text-decoration: none;
 }
 .titreDet {
-  color: #d6dace;
+  color: $textP;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -284,7 +289,7 @@ body {
   border: 1px solid;
 }
 .details {
-  color: #d6dace;
+  color: $textP;
   text-align: center;
 }
 .detailsDiv {
@@ -299,7 +304,7 @@ body {
   border-radius: 7px;
 }
 .back {
-  color: #d6dace;
+  color: $textP;
 }
 .backLink:hover {
   text-decoration: none;
