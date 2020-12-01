@@ -207,6 +207,16 @@ body {
 .carte {
   margin: 30px;
 }
+.btn-card, .btn-card:hover, .btn-card:focus, .btn-card:active {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 7px 12px;
+  font-size: large;
+  outline: none !important;
+  box-shadow: none;
+}
 .Vert {
   background-color: $backgroundP;
   color: $textP;

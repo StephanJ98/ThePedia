@@ -78,15 +78,15 @@ class Body extends Component {
                       <textarea className={`col-12 ${value.tipe}t`} readOnly='readonly' rows='4' value={value.description} />
                     </Card.Text>
                     <div className='center'>
-                      <Button disabled='disabled' id={`timerbtn${value._id}`} type='button' className='btn-primary' data-toggle='modal' data-target={`#id${value._id}chrono`}>
+                      <button id={`timerbtn${value._id}`} type='button' className='btn-card' data-toggle='modal' data-target={`#id${value._id}chrono`}>
                         <i className='fa fa-clock-o img_m' />
-                      </Button>
-                      <Button type='button' className='btn-primary' data-toggle='modal' data-target={`#id${value._id}`}>
+                      </button>
+                      <button type='button' className='btn-card' data-toggle='modal' data-target={`#id${value._id}`}>
                         <i className='fa fa-search img_m' />
-                      </Button>
-                      <Button onClick={() => this.handleSubmit(value._id)} type='submit' className='btn-primary'>
-                        <i className='fa fa-heart img_m' />
-                      </Button>
+                      </button>
+                      <button onClick={() => this.handleSubmit(value._id)} type='submit' className='btn-card'>
+                        <i className='fa fa-heart img_m' /> {value.likes}
+                      </button>
                     </div>
                   </Card.Body>
                   <div className='modal fade mod' id={`id${value._id}`} tabIndex='-1' role='dialog' aria-labelledby='Detalles' aria-hidden='true'>
