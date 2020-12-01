@@ -306,6 +306,10 @@ body {
 .back {
   color: $textP;
 }
+.backLink {
+  width: 100%;
+  text-align: center;
+}
 .backLink:hover {
   text-decoration: none;
 }
