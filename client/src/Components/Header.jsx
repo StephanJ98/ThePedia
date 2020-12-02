@@ -4,7 +4,6 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import Row from 'react-bootstrap/Row'
 import Button from 'react-bootstrap/Button'
 import ModalAjouter from './Modals/ModalAjouter'
-import '../App.scss'
 import { Link } from 'react-router-dom'
 
 export default function Header () {

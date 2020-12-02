@@ -1,7 +1,10 @@
-$backgroundP: #546a2a;
+$colorP: #546a2a;
+$colorS: #7f9e46;
+$colorT : #6e8149;
 $textP: #d6dace;
-$backgroundBtns: #7f9e46;
-$backgroundDBtn : #6e8149;
+$textS: #647a3a;
+$noirBack: #2b3737;
+$colorBW:  #24252a;
 
 html, body {
   margin: 0;
@@ -25,7 +28,7 @@ body {
   height: 30px;
   border: none;
   border-radius: 10px;
-  background-color: $backgroundP;
+  background-color: $colorP;
   color: $textP;
 }
 .tipeOption {
@@ -101,7 +104,7 @@ body {
   }
 }
 #header {
-  background-color: $backgroundP;
+  background-color: $colorP;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -116,26 +119,23 @@ body {
   margin-top: 5px;
 }
 #drop {
-  background-color: $backgroundP;
+  background-color: $colorP;
   border: none;
 }
 #drop:hover {
-  background-color: $backgroundBtns;
+  background-color: $colorS;
 }
 #DropMenu {
-  background-color: $backgroundP;
+  background-color: $colorP;
 }
 .DropItem:hover {
   background-color: transparent;
 }
-.DropButton {
-  background-color: $backgroundBtns;
+.DropButton, .DropButton:hover {
+  background-color: $colorS;
   border: none;
   border-radius: 5px;
   text-align: center;
-}
-.DropButton:hover {
-  background-color: $backgroundDBtn;
 }
 .icons {
   color: $textP;
@@ -145,25 +145,23 @@ body {
 .iconsSpec {
   color: $textP;
   font-size: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0px 10px 0px;
 }
 .DropButton:hover > .icons {
   transform: rotate(25deg);
 }
 #navbar {
-  color: greenyellow;
   text-align: center;
-  background-color: $backgroundP;
-  border-bottom: 2px solid #647a3a;
+  background-color: $colorP;
+  border-bottom: 2px solid $textS;
 }
-#navbar button {
+#navbar a {
   color: $textP;
-  background-color: $backgroundP;
+  background-color: $colorP;
   border: none;
 }
-#navbar button:hover {
-  background-color: #647a3a;
+#navbar a:hover {
+  background-color: $textS;
 }
 #acces{
   height: 60%;
@@ -193,7 +191,7 @@ body {
   left: 50%;
   top: 200px;
   transform: translate(-50%, 0);
-  color: $backgroundP;
+  color: $colorP;
 }
 .text_feuille_bouton {
   position: absolute;
@@ -218,17 +216,17 @@ body {
   box-shadow: none;
 }
 .Vert {
-  background-color: $backgroundP;
+  background-color: $colorP;
   color: $textP;
   border: none;
 }
 .Noir {
   color: $textP;
-  background-color: #2b3737;
+  background-color: $noirBack;
   border: none;
 }
 .Blanc {
-  color: #24252a;
+  color:$colorBW;
   background-color: #edffca;
   border: none;
 }
@@ -239,7 +237,7 @@ body {
 }
 .Oolong {
   background-color: #9fa060;
-  color: #24252a;
+  color:$colorBW;
   border: none;
 }
 .Vertt, .Noirt, .PuErht {
@@ -252,12 +250,12 @@ body {
 .Blanct, .Oolongt {
   background: transparent;
   border: none;
-  color: #24252a;
+  color:$colorBW;
   resize: none;
   outline: none;
 }
 .mod {
-  color: #24252a;
+  color:$colorBW;
 }
 .nodat {
   margin-top: 150px;
@@ -274,18 +272,15 @@ body {
       background-color: transparent;
   }
 }
-.btns {
+.btns, .btns:hover {
   color: $textP;
-  background-color: $backgroundBtns;
-  border: 1px solid #647a3a;
+  background-color: $colorS;
+  border: 1px solid $textS;
   border-radius: 7px;
   height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.btns:hover {
-  color: $textP;
   text-decoration: none;
 }
 .titreDet {
@@ -293,7 +288,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #647a3a;
+  background-color: $textS;
   margin-top: 25px;
   border-radius: 7px;
   border: 1px solid;
@@ -303,23 +298,21 @@ body {
   text-align: center;
 }
 .detailsDiv {
-  background-color: #647a3a;
+  background-color: $textS;
   margin-top: 25px;
   border-radius: 7px;
   border: 1px solid;
 }
 .detailsDivTable {
-  background-color: #647a3a;
+  background-color: $textS;
   margin-top: 25px;
   border-radius: 7px;
 }
 .back {
   color: $textP;
 }
-.backLink {
+.backLink, .backLink:hover {
   width: 100%;
   text-align: center;
-}
-.backLink:hover {
   text-decoration: none;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import './App.scss'
 import Home from './Pages/home'
 import The from './Pages/the'
 import Vert from './Pages/vert'
